@@ -11,12 +11,12 @@ const ReadCreate=()=>{
     return (
         <div className="Appname">
         <div className="mainbtns">
-            {loaction.pathname==='/' &&(
-                <>
-                <Button/>
-                </>
+            {loaction.pathname==='/' &&
+                
+                Button()
+                
 
-            )}
+            }
             {loaction.pathname==='/create' &&(
                 <>
                 <BlogForm/>

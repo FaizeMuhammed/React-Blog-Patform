@@ -5,10 +5,15 @@ import { Link } from 'react-router-dom';
 const BlogForm = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
+    const [error, seterror] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+        if (!title || !content) {
+            seterror('Both fields are required.');
+            return;
+          }
+        seterror('') ;
         console.log('Title:', title);
         console.log('Content:', content);
     };
@@ -26,7 +31,7 @@ const BlogForm = () => {
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         placeholder="Enter your title"
-                        required
+                        
                     />
                 </div>
 
@@ -39,7 +44,7 @@ const BlogForm = () => {
                         onChange={(e) => setContent(e.target.value)}
                         placeholder="Enter your content"
                         rows="5"
-                        required
+                        
                     ></textarea>
                 </div>
 
@@ -50,6 +55,7 @@ const BlogForm = () => {
                 <p className="signup-link">
                     Don’t have an account? <a href="#">Sign up</a>
                 </p>
+                {error && <p style={{ color: 'red' }}>{error}</p>}
             </form>
             <button className="custom-button">
                 <Link to="/" className="button-link">
