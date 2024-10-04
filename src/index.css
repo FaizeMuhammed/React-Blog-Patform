@@ -1,0 +1,633 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  /* margin: 10px 0; */
+}
+
+a {
+  text-decoration: none;
+  color: #333
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+  margin: 20px;
+}
+/* header */
+.Header{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px ;
+  /* border-bottom: .5px solid #333; */
+  
+
+}
+.App{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.material-symbols-outlined{
+  font-size: 45px;
+}
+.Navlist{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Navlist li{
+  padding: 10px;
+}
+
+.Appname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.mainbtns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.blogpost{
+  width: 80% ;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px #333;
+  margin-bottom: 10px;
+}
+
+/* Container to align buttons vertically */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Common button styling */
+.custom-button {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the link inside the button */
+.button-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Icon styling */
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Text styling */
+.text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Container styling */
+.form-container {
+  background-color: white;
+  width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Title */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* Input Labels */
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Input Fields */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+textarea.form-input {
+  resize: none; /* Prevent textarea resizing */
+}
+
+/* Form Footer (Remember Me and Forgot Password) */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Checkbox */
+.checkbox-label {
+  font-size: 14px;
+}
+
+.form-checkbox {
+  margin-right: 8px;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  font-size: 14px;
+  text-decoration: none;
+  color: #555;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Signup Link */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/* Main container */
+.feed-container {
+  /* border: 0.3px solid #333; */
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  padding: 20px;
+  
+  max-height: 700px; 
+  overflow-y: auto; 
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.feed-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.feed-container {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each post list item */
+.post-item {
+  margin-bottom: 20px;
+}
+
+/* Link wrapping the post card */
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Post card style */
+.post-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Post header with avatar and author name */
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.post-author h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Post content */
+.post-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Post footer with interactions (likes, comments) */
+.post-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-interactions span {
+  font-size: 14px;
+  margin-right: 15px;
+  color: #777;
+}
+
+.post-interactions span:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+/* Custom button styling */
+.custom-button {
+  /* background-color: #333; */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  text-decoration: underline;
+}
+
+/* Main container for centering the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* The card style for the login form */
+.login-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title and subtitle */
+.login-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 24px;
+}
+
+/* Input styles */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-input::placeholder {
+  color: #aaa;
+}
+
+/* Remember me and forgot password section */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.remember-me {
+  font-size: 14px;
+  color: #777;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #777;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Login button style */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #555;
+}
+
+/* Signup link */
+.signup-link {
+  font-size: 14px;
+  color: #777;
+  margin-top: 16px;
+}
+
+.signup-link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Main container for centering the sign-up form */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* The card style for the sign-up form */
+.signup-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title and subtitle */
+.signup-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.signup-subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 24px;
+}
+
+/* Input styles */
+.signup-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-input::placeholder {
+  color: #aaa;
+}
+
+/* Sign Up button style */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #555;
+}
+
+/* Login link */
+.login-link {
+  font-size: 14px;
+  color: #777;
+  margin-top: 16px;
+}
+
+.login-link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+.Mainposts{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.halfdiv{
+  width: 50%;
+}
+
+/* BlogPost Card */
+.single-blogpost-card {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.single-post-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.single-post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.single-post-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.single-post-author h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.single-post-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.single-post-content p {
+  font-size: 16px;
+  color: #333;
+}
+
+.single-post-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.single-post-interactions span {
+  margin-right: 15px;
+}
+
+.custom-button-post {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.button-link-post {
+  text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button-link-post:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
